@@ -28,14 +28,14 @@
 		{{ partial("../extensions/em_orders/views/index/new_orders") }}
 	</div>
 	<div class="tabCont cont_2">
-		Принятые
+		{{ partial("../extensions/em_orders/views/index/accept_orders") }}
 	</div>
 	<div class="tabCont cont_3">
-		Завершенные
+		{{ partial("../extensions/em_orders/views/index/compleate_orders") }}
 	</div>
 	<div class="tabCont cont_4">
-		Отмененные
+		{{ partial("../extensions/em_orders/views/index/cancel_orders") }}
 	</div>
-	<script src="{{baseUri}}extensions/em_social/src/js/init.js"></script>
+	<script src="{{baseUri}}extensions/em_orders/src/js/init.js"></script>
 {% endblock %}
 {% block pageScripts %}{% endblock %}

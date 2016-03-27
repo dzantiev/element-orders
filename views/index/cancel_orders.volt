@@ -1,5 +1,5 @@
 <div class="contWrap" style="width:1650px;">
-	<table class="elements js-neworders" cellspacing='0'>
+	<table class="elements js-cancelorders" cellspacing='0'>
 		<tr>
 			<th class="centered"><button class="elbutton dotts"><span class="icon buttonDotts"></span></button></th>
 			<th>id</th>
@@ -13,11 +13,11 @@
 			<th>Время_доставки</th>
 		</tr>
 		{% if orders %}
-			{% for resLine in orders if resLine['status'] == 'N' %}
+			{% for resLine in orders if resLine['status'] == 'X' %}
 				<tr data-id="{{resLine['id']}}">
 					<td class="centered">
 						<div class="editLine">
-							<a href="javascript:void(0)" onclick="em_orders.applyOrder(this)">Принять заказ</a>
+							<a href="javascript:void(0)" onclick="em_orders.newOrder(this)">Новый заказ</a>
 							<a href="javascript:void(0);" onclick="em_orders.compleateOrder(this)">Завершить</a>
 							<a href="javascript:void(0);" onclick="em_orders.cancelOrder(this)">Отменить</a>
 						</div>
