@@ -1,0 +1,12 @@
+{
+	"name":"em_orders",
+	"type":"extension",
+	"status":"installed",
+	"version":"0.1",
+	"sidebarlinks":[
+		{
+			"name":"Заказы",
+			"link":"ext/em_orders/index/"
+		}
+	]
+}
